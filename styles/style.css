@@ -1,0 +1,106 @@
+.commet__form form {
+  display: flex;
+  flex-direction: column;
+}
+.commet__form form .comment__name,
+.commet__form form .comment__text,
+.commet__form form .comment__date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.commet__form form .comment__name .title,
+.commet__form form .comment__text .title,
+.commet__form form .comment__date .title {
+  margin-bottom: 5px;
+}
+.commet__form form .form__input {
+  outline: none;
+  resize: none;
+  height: 40px;
+  width: 150px;
+}
+.commet__form form button {
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #d12180;
+  border: none;
+  color: white;
+}
+
+.error {
+  border: 1px solid red;
+  color: red;
+}
+.error::-moz-placeholder {
+  color: red;
+}
+.error::placeholder {
+  color: red;
+}
+
+.error__text {
+  margin-top: 10px;
+  color: red;
+}
+
+.comments__list .comment__item {
+  display: flex;
+}
+.comments__list .comment__item:not(:last-child) {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cacaca;
+}
+.comments__list .comment__item .comment__item-images img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.comments__list .comment__item .comment__item-content {
+  width: 90%;
+}
+.comments__list .comment__item .comment__item-content .content__name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f6cc4;
+}
+.comments__list .comment__item .comment__item-content .content__date {
+  margin-top: 10px;
+  color: #808080;
+}
+.comments__list .comment__item .comment__item-content .content__text {
+  word-wrap: break-word;
+}
+.comments__list .comment__item .comment__item-content .btn__like {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: none;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.comments__list .comment__item .comment__item-content .dislike {
+  background-image: url(../images/like.png);
+}
+.comments__list .comment__item .comment__item-content .like {
+  background-image: url(../images/dislike.png);
+}
+.comments__list .comment__item .comment__item-content .btn__delete {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: none;
+  background-image: url(../images/delete.png);
+  background-size: 30px 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 15px;
+}
+.comments__list .comment__item .comment__item-content .btn__delete:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

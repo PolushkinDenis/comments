@@ -1,0 +1,106 @@
+.commet__form {
+    form {
+        display: flex;
+        flex-direction: column;
+        .comment__name,
+        .comment__text,
+        .comment__date {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            .title {
+                margin-bottom: 5px;
+            }
+        }
+        .form__input {
+            outline: none;
+            resize: none;
+            height: 40px;
+            width: 150px;
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            margin-bottom: 10px;
+            background-color: #d12180;
+            border: none;
+            color: white;
+        }
+    }
+}
+
+.error {
+    border: 1px solid red;
+    color: red;
+    &::placeholder {
+        color: red;
+    }
+}
+.error__text {
+    margin-top: 10px;
+    color: red;
+}
+
+.comments__list {
+    .comment__item {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #cacaca;
+        }
+        .comment__item-images {
+            img {
+                width: 80px;
+                height: 80px;
+                margin-right: 10px;
+            }
+        }
+        .comment__item-content {
+            width: 90%;
+            .content__name {
+                margin-top: 10px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #1f6cc4;
+            }
+            .content__date {
+                margin-top: 10px;
+                color: #808080;
+            }
+            .content__text {
+                word-wrap: break-word;
+            }
+            .btn__like {
+                width: 35px;
+                height: 35px;
+                border: none;
+                background: none;
+                background-size: 35px;
+                background-repeat: no-repeat;
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            .dislike {
+                background-image: url(../images/like.png);
+            }
+            .like {
+                background-image: url(../images/dislike.png);
+            }
+            .btn__delete {
+                margin-left: 10px;
+                width: 35px;
+                height: 35px;
+                border: none;
+                background: none;
+                background-image: url(../images/delete.png);
+                background-size: 30px 35px;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
